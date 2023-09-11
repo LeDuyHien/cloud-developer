@@ -1,9 +1,9 @@
 import dynamoDBClient from "../config/dynamodb.client";
-import TodoRepository from "./todo.repository";
+import TodosAcess from "./todosAcess";
 
 console.log("Todo Table: ", process.env.TODO_TABLE);
 
-const todoRepository = new TodoRepository(
+const todoRepository = new TodosAcess(
   dynamoDBClient(),
   process.env.TODO_TABLE
 );

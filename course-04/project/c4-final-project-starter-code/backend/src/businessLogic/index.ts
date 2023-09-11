@@ -1,7 +1,7 @@
 import todoStorage from "../helpers/attachmentUtils";
 import todoRepository from "../dataLayer";
-import TodoService from "./todo.service";
+import Todos from "./todos";
 
-const todoService = new TodoService(todoStorage, todoRepository);
+const todoService = new Todos(todoStorage, todoRepository);
 
 export default todoService;

@@ -1,7 +1,7 @@
 import { TodoItem } from '../models/TodoItem'
 import { DocumentClient } from 'aws-sdk/clients/dynamodb'
 
-export default class TodoRepository {
+export default class TodosAcess {
   constructor(private docClient: DocumentClient, private tableName: string) {
   }
 

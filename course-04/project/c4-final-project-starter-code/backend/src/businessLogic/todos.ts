@@ -1,5 +1,5 @@
 import { v4 } from 'uuid'
-import TodoRepository from '../dataLayer/todo.repository'
+import TodosAcess from '../dataLayer/todosAcess'
 import { CreateTodoRequest } from '../requests/CreateTodoRequest'
 import { createLogger } from '../helpers/logging/logger'
 import { TodoItem } from '../models/TodoItem'
@@ -7,10 +7,10 @@ import { TodoStorage } from '../helpers/attachmentUtils/attachmentUtils'
 
 const logger = createLogger('Service: Todo')
 
-export default class TodoService {
+export default class Todos {
   constructor(
     private todoStorage: TodoStorage,
-    private todoRepository: TodoRepository
+    private todoRepository: TodosAcess
   ) {
   }
 
