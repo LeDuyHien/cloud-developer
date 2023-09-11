@@ -1,9 +1,9 @@
 import { v4 } from 'uuid'
-import TodoRepository from '../../repositories/todo.repository'
-import { CreateTodoRequest } from '../../requests/CreateTodoRequest'
-import { createLogger } from '../logging/logger'
-import { TodoItem } from '../../models/TodoItem'
-import { TodoStorage } from '../attachmentUtils/attachmentUtils'
+import TodoRepository from '../dataLayer/todo.repository'
+import { CreateTodoRequest } from '../requests/CreateTodoRequest'
+import { createLogger } from '../helpers/logging/logger'
+import { TodoItem } from '../models/TodoItem'
+import { TodoStorage } from '../helpers/attachmentUtils/attachmentUtils'
 
 const logger = createLogger('Service: Todo')
 

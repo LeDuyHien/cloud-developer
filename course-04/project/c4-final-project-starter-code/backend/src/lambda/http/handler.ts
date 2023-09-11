@@ -4,7 +4,7 @@ import { CreateTodoRequest } from '../../requests/CreateTodoRequest'
 import { getUserId } from '../../helpers/auth/utils'
 import { createLogger } from '../../helpers/logging/logger'
 import { formatJSONResponse } from '../../libs/api-gateway'
-import todoService from '../../helpers/services'
+import todoService from '../../businessLogic'
 import { v4 } from 'uuid'
 import { TodoItem } from '../../models/TodoItem'
 
